@@ -46,3 +46,9 @@ resource "aws_cloudfront_origin_access_control" "static_hosting" {
   signing_behavior                  = "always"
   signing_protocol                  = "sigv4"
 }
+
+# ディストリビューションのドメイン名を表示
+output "cloudfront_distribution_domain_name" {
+  description = "The domain name of the CloudFront distribution"
+  value       = aws_cloudfront_distribution.static_hosting.domain_name
+}
