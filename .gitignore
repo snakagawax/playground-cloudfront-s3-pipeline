@@ -1,0 +1,40 @@
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Node modules (if using Node.js)
+node_modules/
+
+# Python virtual environment (if using Python)
+venv/
+__pycache__/
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Ignore any other temporary files
+*.tmp
+*.swp
+*.bak
+*.old
+
+# Ignore build artifacts
+build/
+dist/
